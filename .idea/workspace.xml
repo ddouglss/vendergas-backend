@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a3e61ae3-460f-4f42-aecb-64e1d9c55928" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/usuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/usuarioModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/authController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/usuarioModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/usuarioModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/baseRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/baseRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +73,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\-\projet\express\vendergas-backend\src\models" />
       <recent name="D:\-\projet\express\vendergas-backend\src\routes" />
       <recent name="D:\-\projet\express\vendergas-backend\src" />
     </key>
@@ -85,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1752170630826</updated>
       <workItem from="1752170636175" duration="8181000" />
-      <workItem from="1752186920592" duration="1661000" />
+      <workItem from="1752186920592" duration="6737000" />
     </task>
     <servers />
   </component>
