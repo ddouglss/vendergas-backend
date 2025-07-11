@@ -1,5 +1,7 @@
+version: '3.8'
+
 services:
-  app:
+  api:
     build: .
     ports:
       - "3000:3000"
@@ -7,20 +9,19 @@ services:
       - JWT_SECRET=VENDERGAS
       - MONGO_URI=mongodb://mongodb:27017/desafio-db
     depends_on:
-      - mongodb
-    healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:3000/health" ]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-  mongodb:
-    image: mongo:6.0
+      - mongo
+    volumes:
+      - .:/app
+    restart: always
+
+  mongo:
+    image: mongo
+    container_name: mongo
     ports:
       - "27017:27017"
     volumes:
-      - mongo-data:/data/db
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=example
+      - mongo_data:/data/db
+    restart: always
+
 volumes:
-  mongo-data:
+  mongo_data:

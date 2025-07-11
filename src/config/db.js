@@ -1,17 +1,12 @@
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
-    const mongoURI = process.env.MONGO_URI || 'mongodb://mongodb:27017/desafio-db';
-
     try {
-        await mongoose.connect(mongoURI, {
+        await mongoose.connect(process.env.MONGO_URI || 'mongodb://mongodb:27017/desafio-db', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
-
-        const { host, port, name } = mongoose.connection;
-        console.log(`✅ MongoDB conectado em: ${host}:${port}/${name}`);
-
+        console.log(`✅ MongoDB conectado com sucesso!`);
         return mongoose.connection;
     } catch (err) {
         console.error('❌ Falha na conexão com MongoDB:', err.message);

@@ -1,10 +1,10 @@
 {
   "name": "vendergas-backend",
   "version": "1.0.0",
-  "main": "src/app.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +17,9 @@
     "url": "https://github.com/ddouglss/vendergas-backend/issues"
   },
   "homepage": "https://github.com/ddouglss/vendergas-backend#readme",
-  "description": "",
+  "description": "API para gestão de comércio - VenderGas",
   "dependencies": {
     "bcrypt": "^6.0.0",
-    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
