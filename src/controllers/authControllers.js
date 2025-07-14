@@ -1,5 +1,6 @@
-const usuarioService = require('src/services/usuarioService');
-const User = require('src/models/usuario');
+const usuarioService = require('../services/usuarioService');
+
+const User = require('../models/usuario');
 
 
 exports.register = async (req, res) => {

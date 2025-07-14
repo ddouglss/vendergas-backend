@@ -4,7 +4,7 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 ENV PORT=3000
-ENV MONGO_URI=mongodb://mongo:27017/vendergas
+ENV MONGO_URI=mongodb://mongo:27017/desafio-db
 ENV JWT_SECRET=VENDERGAS
 
 EXPOSE 3000

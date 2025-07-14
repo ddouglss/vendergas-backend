@@ -1,4 +1,4 @@
-const usuarioService = require('src/services/usuarioService');
+const usuarioService = require('../services/usuarioService');
 
 exports.updateRole = async (req, res) => {
     try {

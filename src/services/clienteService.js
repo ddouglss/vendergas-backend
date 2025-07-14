@@ -1,4 +1,4 @@
-const Cliente = require('src/models/cliente');
+const Cliente = require('../models/cliente');
 
 class ClienteService {
 

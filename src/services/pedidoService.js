@@ -1,4 +1,4 @@
-const Pedido = require('src/models/pedido');
+const Pedido = require('../models/pedido');
 
 class PedidoService {
     async create(data) {

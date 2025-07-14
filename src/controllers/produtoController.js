@@ -1,4 +1,4 @@
-const ProdutoService = require('src/services/produtoService');
+const ProdutoService = require('../services/produtoService');
 
 exports.create = async (req, res) => {
     try {

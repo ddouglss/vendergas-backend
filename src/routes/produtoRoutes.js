@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const produtoController = require('src/controllers/produtoController');
-const auth = require("src/middlewares/auth");
-const authorize = require("src/middlewares/authorize");
+const produtoController = require('../controllers/produtoController');
+const auth = require("../middlewares/auth");
+const authorize = require("../middlewares/authorize");
 
 router.post('/', auth, produtoController.create);
 router.get('/:empresaId', auth, produtoController.getByEmpresa);

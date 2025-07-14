@@ -1,4 +1,4 @@
-const Produto = require('src/models/produto');
+const Produto = require('../models/produto');
 
 class ProdutoService {
     async create(data) {

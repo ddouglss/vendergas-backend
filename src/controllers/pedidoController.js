@@ -1,4 +1,4 @@
-const PedidoService = require('src/services/pedidoService');
+const PedidoService = require('../services/pedidoService');
 
 exports.create = async (req, res) => {
     try {

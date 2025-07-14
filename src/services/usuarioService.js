@@ -1,8 +1,8 @@
-const User = require('src/models/usuario');
-const Empresa = require('src/models/empresa');
-const Cliente = require('src/models/cliente');
-const Pedido = require('src/models/pedido');
-const Produto = require('src/models/produto');
+const User = require('../models/usuario');
+const Empresa = require('../models/empresa');
+const Cliente = require('../models/cliente');
+const Pedido = require('../models/pedido');
+const Produto = require('../models/produto');
 
 class UsuarioService {
     async registerUser({ name, email, password }) {

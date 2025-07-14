@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const empresaController = require('src/controllers/empresaController');
-const auth = require('src/middlewares/auth');
-const authorize = require("src/middlewares/authorize");
+const empresaController = require('../controllers/empresaController');
+const auth = require('../middlewares/auth');
+const authorize = require("../middlewares/authorize");
 
 router.post('/', auth, empresaController.create);
 router.get('/', auth, empresaController.getAll);

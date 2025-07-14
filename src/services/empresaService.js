@@ -1,7 +1,7 @@
-const Empresa = require('src/models/empresa');
-const Cliente = require('src/models/cliente');
-const Produto = require('src/models/produto');
-const Pedido = require('src/models/pedido');
+const Empresa = require('../models/empresa');
+const Cliente = require('../models/cliente');
+const Produto = require('../models/produto');
+const Pedido = require('../models/pedido');
 
 class EmpresaService {
     async create(data, userId) {

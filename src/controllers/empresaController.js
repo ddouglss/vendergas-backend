@@ -1,4 +1,4 @@
-const EmpresaService = require('src/services/empresaService');
+const EmpresaService = require('../services/empresaService');
 
 exports.create = async (req, res) => {
     try {
