@@ -8,7 +8,6 @@ describe('Testes de Autenticação', () => {
     let app;
 
     beforeAll(async () => {
-        // conecta ao banco e cria a app
         app = await createApp();
     });
 
