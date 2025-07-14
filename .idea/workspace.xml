@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3e61ae3-460f-4f42-aecb-64e1d9c55928" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/authController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middlewares/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middlewares/verifyPassword.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/usuarioModel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/baseRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-    </list>
+    <list default="true" id="a3e61ae3-460f-4f42-aecb-64e1d9c55928" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +50,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/model-usuario",
+    "git-widget-placeholder": "feat/user-seeds",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -76,10 +63,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\-\projet\express\vendergas-backend\tests" />
+      <recent name="D:\-\projet\express\vendergas-backend\tests\integration" />
       <recent name="D:\-\projet\express\vendergas-backend" />
       <recent name="D:\-\projet\express\vendergas-backend\src\models" />
       <recent name="D:\-\projet\express\vendergas-backend\src\routes" />
-      <recent name="D:\-\projet\express\vendergas-backend\src" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -98,6 +86,7 @@
       <updated>1752170630826</updated>
       <workItem from="1752170636175" duration="8181000" />
       <workItem from="1752186920592" duration="6737000" />
+      <workItem from="1752263530865" duration="3515000" />
     </task>
     <servers />
   </component>
