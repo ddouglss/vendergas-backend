@@ -5,18 +5,18 @@ const Pedido = require('../models/pedido');
 const Produto = require('../models/produto');
 
 class UsuarioService {
-    async registerUser({ name, email, password }) {
+    async registerUser({ nome, email, password }) {
         const existingUser = await User.findOne({ email });
         if (existingUser) throw new Error('Email já registrado');
 
-        const user = await User.create({ name, email, password });
+        const user = await User.create({ nome, email, password });
         const token = user.generateAuthToken();
 
         return {
             token,
             user: {
                 id: user._id,
-                name: user.name,
+                nome: user.nome,
                 email: user.email,
                 role: user.role
             }
@@ -35,7 +35,7 @@ class UsuarioService {
             token,
             user: {
                 id: user._id,
-                name: user.name,
+                nome: user.nome,
                 email: user.email,
                 role: user.role
             }
@@ -56,7 +56,7 @@ class UsuarioService {
             message: 'Usuário atualizado com sucesso',
             user: {
                 id: user._id,
-                name: user.name,
+                nome: user.nome,
                 email: user.email,
                 role: user.role
             }
@@ -81,7 +81,7 @@ class UsuarioService {
             message: `Papel do usuário atualizado para ${newRole}`,
             user: {
                 id: user._id,
-                name: user.name,
+                nome: user.nome,
                 email: user.email,
                 role: user.role
             }

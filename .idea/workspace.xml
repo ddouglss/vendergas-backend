@@ -5,27 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3e61ae3-460f-4f42-aecb-64e1d9c55928" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config/seed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/integration/auth.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/setup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/authControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/authControllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/clienteController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/clienteController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/empresaController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/empresaController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/pedidoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/pedidoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/produtoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/produtoController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/usuarioController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/usuarioController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/clienteRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/clienteRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/empresaRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/empresaRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/pedidoRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/pedidoRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/produtoRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/produtoRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/usuarioRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/usuarioRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/clienteService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/clienteService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/empresaService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/empresaService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/pedidoService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/pedidoService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/produtoService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/produtoService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/seed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/seed.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/usuarioService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/usuarioService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,10 +74,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\-\projet\express\vendergas-backend\tests" />
+      <recent name="D:\-\projet\express\vendergas-backend\tests\integration" />
       <recent name="D:\-\projet\express\vendergas-backend" />
       <recent name="D:\-\projet\express\vendergas-backend\src\models" />
       <recent name="D:\-\projet\express\vendergas-backend\src\routes" />
-      <recent name="D:\-\projet\express\vendergas-backend\src" />
     </key>
   </component>
   <component name="SharedIndexes">
