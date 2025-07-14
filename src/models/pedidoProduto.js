@@ -5,4 +5,5 @@ const PedidoProdutoSchema = new mongoose.Schema({
     quantidade: { type: Number, required: true }
 });
 
-module.exports = PedidoProdutoSchema;
+const PedidoProduto = mongoose.model('PedidoProduto', PedidoProdutoSchema);
+module.exports = PedidoProduto;
