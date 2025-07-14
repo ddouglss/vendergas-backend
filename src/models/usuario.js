@@ -31,4 +31,4 @@ UserSchema.methods.generateAuthToken = function () {
         process.env.JWT_SECRET, {expiresIn: '1h'});
 };
 
-module.exports = mongoose.model('usuario', UserSchema);
+module.exports = mongoose.model('Usuario', UserSchema);
