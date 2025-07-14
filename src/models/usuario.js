@@ -6,7 +6,13 @@ const UserSchema = new mongoose.Schema({
     nome: {type: String, required: true},
     email: {type: String, required: true, unique: true},
     password: {type: String, required: true, select: false},
-    empresa: ({type: mongoose.Schema.Types.ObjectId, ref: 'Empresa'}),
+
+    role: {
+        type: String,
+        enum: ['admin', 'user','superadmin'],
+        default: 'user'
+    }
+
 });
 
 UserSchema.pre('save', async function (next){
@@ -21,7 +27,8 @@ UserSchema.methods.comparePassword = async function (password) {
 };
 
 UserSchema.methods.generateAuthToken = function () {
-    return jwt.sign({id: this._id}, process.env.JWT_SECRET, {expiresIn: '1h'});
+    return jwt.sign({id: this._id, role: this.role},
+        process.env.JWT_SECRET, {expiresIn: '1h'});
 };
 
 module.exports = mongoose.model('Usuario', UserSchema);
