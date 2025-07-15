@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const PedidoProdutoSchema = require('./PedidoProduto');
+const PedidoProdutoSchema = require('./pedidoProduto');
+
 
 const PedidoSchema = new mongoose.Schema({
     numero: { type: String, required: true },
