@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - JWT_SECRET=VENDERGAS
+      - MONGO_URI=mongodb+srv://ddouglss1999:dMMYoINHmkUbXql0@cluster0.mg9faas.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    volumes:
+      - .:/app
+    restart: always
