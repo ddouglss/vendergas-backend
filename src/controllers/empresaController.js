@@ -18,6 +18,26 @@ exports.getAll = async (req, res) => {
     }
 };
 
+exports.getMinhaEmpresa = async (req, res) => {
+    try {
+        const user = req.user;
+
+        if (!user.empresaId) {
+            return res.status(404).json({ success: false, message: 'Usuário não está vinculado a nenhuma empresa.' });
+        }
+
+        const empresa = await Empresa.findById(user.empresaId);
+        if (!empresa) {
+            return res.status(404).json({ success: false, message: 'Empresa não encontrada.' });
+        }
+
+        return res.status(200).json([empresa]);
+    } catch (err) {
+        console.error("Erro ao buscar empresa do usuário:", err);
+        return res.status(500).json({ success: false, message: 'Erro interno ao buscar empresa.' });
+    }
+};
+
 exports.update = async (req, res) => {
     try {
         const { id } = req.params;

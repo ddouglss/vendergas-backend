@@ -29,8 +29,18 @@ class UsuarioService {
             throw new Error('Credenciais inválidas');
         }
 
-        const token = user.generateAuthToken();
         const empresaId = user.empresa ? user.empresa._id.toString() : null;
+
+        const jwt = require('jsonwebtoken');
+        const token = jwt.sign({
+            id: user._id,
+            nome: user.nome,
+            email: user.email,
+            role: user.role,
+            empresaId: empresaId
+        }, process.env.JWT_SECRET || 'VENDERGAS', {
+            expiresIn: '1d'
+        });
 
         return {
             token,
@@ -43,6 +53,7 @@ class UsuarioService {
             }
         };
     }
+
 
     async updateUser(id, data) {
         const user = await User.findById(id);
