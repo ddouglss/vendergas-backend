@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a3e61ae3-460f-4f42-aecb-64e1d9c55928" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/empresaController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/empresaController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middlewares/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middlewares/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/empresaRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/empresaRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/usuarioService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/usuarioService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/clienteController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/clienteController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/clienteRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/clienteRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/clienteService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/clienteService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,7 @@
       <workItem from="1752263530865" duration="3515000" />
       <workItem from="1752534587890" duration="3837000" />
       <workItem from="1752551103972" duration="194000" />
-      <workItem from="1752681463963" duration="3662000" />
+      <workItem from="1752681463963" duration="5150000" />
     </task>
     <servers />
   </component>

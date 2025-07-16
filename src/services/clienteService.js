@@ -1,4 +1,5 @@
 const Cliente = require('../models/cliente');
+const Empresa = require("../models/empresa");
 
 class ClienteService {
 
@@ -9,6 +10,10 @@ class ClienteService {
 
     async getByEmpresa(empresaId) {
         return await Cliente.find({ empresa: empresaId });
+    }
+
+    async getAllByClient(userId) {
+        return await Cliente.find({ usuario: userId });
     }
 
     async updateCliente(id, data) {

@@ -39,6 +39,20 @@ exports.create = async (req, res) => {
 
 };
 
+exports.getAllClient = async (req, res) => {
+    try {
+        const userId = req.user.id; // Pega do token, não do params
+        if (!userId) {
+            return res.status(400).json({ success: false, error: 'ID do usuário é obrigatório' });
+        }
+
+        const clientes = await ClienteService.getAllByUser(userId);
+        return res.status(200).json({ success: true, data: clientes });
+    } catch (error) {
+        return res.status(500).json({ success: false, error: error.message });
+    }
+};
+
 exports.getByEmpresa = async (req, res) => {
     try {
         const { empresaId } = req.params;
