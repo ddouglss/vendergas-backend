@@ -9,6 +9,30 @@ exports.create = async (req, res) => {
     }
 };
 
+exports.getAllProduto = async (req, res) => {
+    try {
+        const clienteId = req.user.cliente || req.params.clienteId; // ex: obter clienteId
+        if (!clienteId) {
+            return res.status(400).json({ success: false, error: 'ID do cliente é obrigatório' });
+        }
+
+        const produtos = await ProdutoService.getAllProduto(clienteId);
+        res.status(200).json({ success: true, data: produtos });
+    } catch (err) {
+        res.status(500).json({ success: false, error: err.message });
+    }
+}
+
+
+exports.getAllProduto = async (req, res) => {
+    try {
+        const produtos = await ProdutoService.getAllProduto();
+        res.status(200).json({ success: true, data: produtos });
+    }catch (err) {
+        res.status(500).json({ success: false, error: err.message });
+    }
+}
+
 exports.getByEmpresa = async (req, res) => {
     try {
         const produtos = await ProdutoService.getByEmpresa(req.params.empresaId);
