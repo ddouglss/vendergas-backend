@@ -1,5 +1,4 @@
 const Cliente = require('../models/cliente');
-const Empresa = require("../models/empresa");
 
 class ClienteService {
 
