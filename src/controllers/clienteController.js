@@ -46,7 +46,7 @@ exports.getAllClient = async (req, res) => {
             return res.status(400).json({ success: false, error: 'ID do usuário é obrigatório' });
         }
 
-        const clientes = await ClienteService.getAllByUser(userId);
+        const clientes = await ClienteService.getAllByClient(userId);
         return res.status(200).json({ success: true, data: clientes });
     } catch (error) {
         return res.status(500).json({ success: false, error: error.message });

@@ -10,6 +10,10 @@ class ProdutoService {
         return await Produto.find({ empresa: empresaId });
     }
 
+    async getAllProduto(produtoId) {
+        return await Produto.find({prroduto: produtoId})
+    }
+
     async updateProduto(id, data) {
         console.log('Tentando atualizar produto:', id, data);
         const produto = await Produto.findByIdAndUpdate(id, data, { new: true });
