@@ -24,12 +24,13 @@ class UsuarioService {
     }
 
     async loginUser({ email, password }) {
-        const user = await User.findOne({ email }).select('+password');
+        const user = await User.findOne({ email }).select('+password').populate('empresa');
         if (!user || !(await user.comparePassword(password))) {
             throw new Error('Credenciais inválidas');
         }
 
         const token = user.generateAuthToken();
+        const empresaId = user.empresa ? user.empresa._id.toString() : null;
 
         return {
             token,
@@ -37,7 +38,8 @@ class UsuarioService {
                 id: user._id,
                 nome: user.nome,
                 email: user.email,
-                role: user.role
+                role: user.role,
+                empresaId: empresaId
             }
         };
     }
