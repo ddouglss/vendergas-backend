@@ -10,7 +10,11 @@ const UserSchema = new mongoose.Schema({
     role: {
         type: String,
         enum: ['admin', 'user','superadmin'],
-        default: 'user'
+        default: 'admin'
+    },
+    empresa: {
+        type: mongoose.Schema.ObjectId,
+        ref: 'Empresa',
     }
 
 });
@@ -27,8 +31,15 @@ UserSchema.methods.comparePassword = async function (password) {
 };
 
 UserSchema.methods.generateAuthToken = function () {
-    return jwt.sign({id: this._id, role: this.role},
-        process.env.JWT_SECRET, {expiresIn: '1h'});
+    return jwt.sign(
+        {
+            id: this._id,
+            role: this.role,
+            empresaId: this.empresa ? this.empresa.toString() : null
+        },
+        process.env.JWT_SECRET,
+        { expiresIn: '1h' }
+    );
 };
 
 module.exports = mongoose.model('Usuario', UserSchema);

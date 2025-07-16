@@ -5,7 +5,7 @@ const auth = require('../middlewares/auth');
 const authorize = require("../middlewares/authorize");
 
 router.post('/', clienteController.create);
-router.get('/empresa/:empresaId', auth, authorize('superadmin'), clienteController.getByEmpresa);
+router.get('/empresa/:empresaId', auth, clienteController.getByEmpresa);
 router.put('/:id', auth, authorize('admin', 'superadmin'), clienteController.update);
 router.delete('/:id', auth, authorize('admin', 'superadmin'), clienteController.delete);
 
