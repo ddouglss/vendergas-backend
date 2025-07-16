@@ -14,7 +14,8 @@ const auth = (req, res, next) => {
         req.user = {
             id: decoded.id,
             role: decoded.role || 'user',
-            email: decoded.email || null
+            email: decoded.email || null,
+            empresaId: decoded.empresaId || null
         };
         next();
     } catch (err) {
