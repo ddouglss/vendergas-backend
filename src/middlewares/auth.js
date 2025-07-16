@@ -15,6 +15,7 @@ const auth = (req, res, next) => {
             id: decoded.id,
             role: decoded.role || 'user',
             email: decoded.email || null,
+            nome: decoded.nome || null,
             empresaId: decoded.empresaId || null
         };
         next();

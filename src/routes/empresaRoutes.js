@@ -6,6 +6,7 @@ const authorize = require("../middlewares/authorize");
 
 router.post('/', auth, empresaController.create);
 router.get('/', auth, empresaController.getAll);
+router.get('/me', auth, empresaController.getMinhaEmpresa);
 router.put('/:id', auth, authorize('admin', 'superadmin'), empresaController.update);
 router.delete('/empresa/:id', auth, authorize('admin', 'superadmin'), empresaController.deleteEmpresaSimples);
 router.delete('/empresa-cascade/:id', auth, authorize('admin', 'superadmin'), empresaController.deleteEmpresaComCascade);
